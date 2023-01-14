@@ -1,4 +1,6 @@
-﻿namespace CoffeShopApp;
+﻿using Syncfusion.Maui.Core.Hosting;
+
+namespace CoffeShopApp;
 
 public static class MauiProgram
 {
@@ -7,12 +9,13 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
+			.ConfigureSyncfusionCore()
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
-
+		builder.ConfigureSyncfusionCore();
 		return builder.Build();
 	}
 }
