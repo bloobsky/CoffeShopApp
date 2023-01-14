@@ -1,4 +1,7 @@
-﻿using Syncfusion.Maui.Core.Hosting;
+﻿using CoffeShopApp.ViewModel;
+using CoffeShopApp.Views;
+using Microsoft.Extensions.DependencyInjection;
+using Syncfusion.Maui.Core.Hosting;
 
 namespace CoffeShopApp;
 

@@ -54,8 +54,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\bagel.png" />
+	  <None Remove="Resources\Images\burger.png" />
 	  <None Remove="Resources\Images\cart.svg" />
 	  <None Remove="Resources\Images\chaiLatte.png" />
+	  <None Remove="Resources\Images\chicken.png" />
+	  <None Remove="Resources\Images\donut.png" />
 	  <None Remove="Resources\Images\espresso.png" />
 	  <None Remove="Resources\Images\home.svg" />
 	  <None Remove="Resources\Images\icon.png" />
@@ -72,6 +76,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Cart.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Details.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Menu.xaml">
