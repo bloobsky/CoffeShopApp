@@ -5,7 +5,9 @@
              Title="Home">
 
     <ScrollView>
-        <VerticalStackLayout>
+        <VerticalStackLayout
+            Spacing="20"
+            Padding="20">
 
             <Image
                 Source="logo.png"
@@ -16,7 +18,8 @@
                 Text="Welcome to Eco Cafeteria"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
 
             <Label
                 Text="Use the tabar for menu, cart and make sure you check about us page."
