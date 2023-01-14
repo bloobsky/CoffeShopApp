@@ -92,7 +92,7 @@ namespace CoffeShopApp.ViewModel
             CartItems = new ObservableCollection<Beverages> { };
             ItemClick = new Command<Beverages>(executeItemClick);
             
-            CartClick = new Command<Beverages>(executeCartClick);
+         //   CartClick = new Command<Beverages>(executeCartClick);
             this.navigation = navigation;
         }
         private INavigation navigation;
@@ -101,12 +101,6 @@ namespace CoffeShopApp.ViewModel
         {
             this.SelectedItem = item;
             await navigation.PushModalAsync(new Details(this));
-        }
-
-        async void executeCartClick(Beverages item)
-        {
-            this.CartItems.Add(this.SelectedItem);
-           //  await navigation.PushAsync(new Cart(this));
         }
     }
 }
