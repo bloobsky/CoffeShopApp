@@ -49,6 +49,29 @@ namespace CoffeShopApp.ViewModel
                     Price = "3.5"
                 }
             };
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+            CartItems = new ObservableCollection<Beverages> { };
+            ItemClick = new Command<Beverages>(executeItemClick);
+            
+            CartClick = new Command(executeCartClick);
+            // this.navigation = navigation;
+        }
+        private INavigation navigation =  App.Current.MainPage.Navigation;
+
+        async void executeItemClick(Beverages item)
+        {
+            this.SelectedItem = item;
+            await navigation.PushModalAsync(new Details(this));
+>>>>>>> Stashed changes
+        }
+
+        async void executeCartClick()
+        {
+            this.CartItems.Add(this.SelectedItem);
+>>>>>>> Stashed changes
         }
     }
 }

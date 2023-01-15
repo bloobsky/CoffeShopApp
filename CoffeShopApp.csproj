@@ -47,8 +47,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Remove="Models\Beverages - kopiować.cs" />
-	  <Compile Remove="Models\Food.cs" />
 	  <Compile Remove="ViewModel\BeveragesViewModel.cs" />
 	  <Compile Remove="ViewModel\Class1.cs" />
 	</ItemGroup>
