@@ -5,10 +5,10 @@ namespace CoffeShopApp.Views;
 public partial class Menu : ContentPage
 {
 	MenuViewModel menuViewModel;
-	public Menu()
+	public Menu(MenuViewModel viewModel)
 	{
 		InitializeComponent();
-		menuViewModel= new MenuViewModel(Navigation);
+        menuViewModel = viewModel;
 		BindingContext = menuViewModel;
 	}
 }

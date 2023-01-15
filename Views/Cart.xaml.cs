@@ -7,10 +7,10 @@ public partial class Cart : ContentPage
 {
 	MenuViewModel menuViewModel;
 
-    public Cart()
+    public Cart(MenuViewModel viewModel)
 	{
 		InitializeComponent();
-        menuViewModel = new MenuViewModel(Navigation);
+        menuViewModel = viewModel;
         BindingContext = menuViewModel;
 	}
 }

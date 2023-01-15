@@ -18,7 +18,7 @@ namespace CoffeShopApp.ViewModel
         public Beverages SelectedItem { get; set; }
         public ICommand ItemClick { get; set; }
         public ICommand CartClick { get; set; }
-        public MenuViewModel(INavigation navigation)
+        public MenuViewModel()
         {
             Beverages = new ObservableCollection<Beverages>
             {
@@ -95,7 +95,7 @@ namespace CoffeShopApp.ViewModel
          //   CartClick = new Command<Beverages>(executeCartClick);
             this.navigation = navigation;
         }
-        private INavigation navigation;
+        private INavigation navigation =  App.Current.MainPage.Navigation;
 
         async void executeItemClick(Beverages item)
         {
